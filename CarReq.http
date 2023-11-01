@@ -1,0 +1,60 @@
+### add Car
+POST localhost:8080/car/1
+content-type:application/json
+
+{
+  "brand" : "Nissan",
+  "power" : 100,
+  "year" : 2018
+}
+
+
+### add Car
+ POST localhost:8080/car/1
+content-type:application/json
+
+{
+"brand" : "Volga",
+"power" : 98,
+"year" : 2022
+}
+
+### add Car
+ POST localhost:8080/car/3
+content-type:application/json
+
+{
+  "brand" : "Volga",
+  "power" : 98,
+  "year" : 2022
+}
+
+
+
+### get all Car
+GET localhost:8080/car
+
+### get Car by id
+GET localhost:8080/car/2
+
+### get Car by incorrect id
+GET localhost:8080/car/100
+
+### get all Car by brand
+GET localhost:8080/car/search?brand=Volga
+
+### remove Car by id
+DELETE localhost:8080/car/1
+
+### update Car
+PUT localhost:8080/car
+content-type:application/json
+
+{
+  "id" : 1,
+  "brand" : "Nissan",
+  "power" : 98,
+  "year" : 2020
+}
+
+
